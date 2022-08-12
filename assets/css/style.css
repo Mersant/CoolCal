@@ -1,0 +1,68 @@
+* {
+    font-family: 'Aboreto';
+}
+
+header {
+    text-align: center;
+    font-family: 'Aboreto';
+    font-size: 150%;
+    background-color: rgb(195, 190, 90);
+    border-bottom-width: 10px;
+    border-style: solid;
+    border-color: white;
+}
+h1 {
+    font-size: 200%;
+    font-weight: 800;
+}
+body {
+    background-color: black;
+}
+
+#statusUpdate {
+    padding: 15px;
+    color: #c3be5a;
+}
+
+/* timeCard# styling */
+.timeDiv {
+    color: #c3be5a;
+    display: inline-block;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-style: double;
+    border-color: #c3be5a;
+    padding: 12px;
+}
+.hiddenTime {
+    display: none;
+}
+.eventContainer {
+    display: inline-block;
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    width: 1200px;
+    border-radius: 10px;
+}
+.eventTextInput {
+    width: 100%;
+    
+}
+.saveButton {
+    color: black;
+    background-color: #c3be5a;
+    border-radius: 10px;
+    padding: 12px;
+    display: inline;
+}
+.saveButton:hover {
+    background-color: white;
+    color: black;
+    transition: background-color 200ms linear;
+    cursor: grab;
+    
+}
+#saveImage {
+    max-height: 15px;
+}
