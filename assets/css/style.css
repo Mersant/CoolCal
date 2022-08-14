@@ -25,6 +25,8 @@ body {
 }
 
 /* timeCard# styling */
+
+/* This is the little time stamp on the far left of the page */
 .timeDiv {
     color: #c3be5a;
     display: inline-block;
@@ -34,9 +36,11 @@ body {
     border-color: #c3be5a;
     padding: 12px;
 }
+/* hiddenTime is used as a sort of hidden data within the HTML for JS purposes */
 .hiddenTime {
     display: none;
 }
+/* Box surrounding the text input */
 .eventContainer {
     display: inline-block;
     background-color: white;
@@ -44,11 +48,15 @@ body {
     padding: 15px;
     width: 1200px;
     border-radius: 10px;
+    border-style: double;
+    border-width: 10px;
+
 }
 .eventTextInput {
     width: 100%;
     
 }
+
 .saveButton {
     color: black;
     background-color: #c3be5a;

@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aboreto">
-    
 </head>
 <body>
     
@@ -17,111 +16,112 @@
         A calender app for those of finer taste.<br><br>
         It is: <span id="currentTime"></span>
     </header>
-
+    <!-- statusUpdate will change to reflect whenever something has been saved -->
     <span id="statusUpdate">There is no status update to display.</span>
 
-    <div id="timeCard0">
+    <!-- Each of these divs represents a block of time between 9:00am and 5:00pm. It has the time to the left, a text input in the center and
+    a save button to the far right that saves the data of that individual time slot to local storage.-->
+    <div>
         <div class="timeDiv">09:00A</div>
         <span class="hiddenTime" id="timeStamp0">09</span>
         <div class="eventContainer" id="inputField0">
             <input type="text" class="eventTextInput" id="textInput0">
         </div>
-        <div class="saveButton" onclick="updateData()">
+        <div class="saveButton" onclick="updateData(0)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
-    <div id="timeCard1">
+    <div>
         <div class="timeDiv">10:00A</div>
         <span class="hiddenTime" id="timeStamp1">10</span>
         <div class="eventContainer" id="inputField1">
             <input type="text" class="eventTextInput" id="textInput1">
         </div>
-        <div class="saveButton">
+        <div class="saveButton" onclick="updateData(1)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
-    <div id="timeCard2">
+    <div>
         <div class="timeDiv">11:00A</div>
         <span class="hiddenTime" id="timeStamp2">11</span>
         <div class="eventContainer" id="inputField2">
             <input type="text" class="eventTextInput" id="textInput2">
         </div>
-        <div class="saveButton">
+        <div class="saveButton" onclick="updateData(2)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
-    <div id="timeCard3">
+    <div>
         <div class="timeDiv">12:00P</div>
         <span class="hiddenTime" id="timeStamp3">12</span>
         <div class="eventContainer" id="inputField3">
             <input type="text" class="eventTextInput" id="textInput3">
         </div>
-        <div class="saveButton">
+        <div class="saveButton" onclick="updateData(3)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
 
-    <div id="timeCard4">
+    <div>
         <div class="timeDiv">01:00P</div>
         <span class="hiddenTime" id="timeStamp4">13</span>
         <div class="eventContainer" id="inputField4">
             <input type="text" class="eventTextInput" id="textInput4">
         </div>
-        <div class="saveButton">
+        <div class="saveButton" onclick="updateData(4)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
-    <div id="timeCard5">
+    <div>
         <div class="timeDiv">02:00P</div>
         <span class="hiddenTime" id="timeStamp5">14</span>
         <div class="eventContainer" id="inputField5">
             <input type="text" class="eventTextInput" id="textInput5">
         </div>
-        <div class="saveButton">
+        <div class="saveButton" onclick="updateData(5)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
-    <div id="timeCard6">
+    <div>
         <div class="timeDiv">03:00P</div>
         <span class="hiddenTime" id="timeStamp6">15</span>
         <div class="eventContainer" id="inputField6">
             <input type="text" class="eventTextInput" id="textInput6">
         </div>
-        <div class="saveButton">
+        <div class="saveButton" onclick="updateData(6)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
-    <div id="timeCard7">
+    <div>
         <div class="timeDiv">04:00P</div>
         <span class="hiddenTime" id="timeStamp7">16</span>
         <div class="eventContainer" id="inputField7">
             <input type="text" class="eventTextInput" id="textInput7">
         </div>
-        <div class="saveButton">
+        <div class="saveButton" onclick="updateData(7)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
-    <div id="timeCard8">
+    <div>
         <div class="timeDiv">05:00P</div>
         <span class="hiddenTime" id="timeStamp8">17</span>
         <div class="eventContainer" id="inputField8">
             <input type="text" class="eventTextInput" id="textInput8">
         </div>
-        <div class="saveButton">
+        <div class="saveButton" onclick="updateData(8)">
             Save me. <img id="saveImage" src="./assets/images/save-file_black.png">
         </div>
     </div>
 
     <script type = "text/JavaScript" src = "https://MomentJS.com/downloads/moment.js"></script>
-    <script type = "text/JavaScript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type = "text/JavaScript" src = "./assets/js/script.js"></script>
 </body>
 </html>
