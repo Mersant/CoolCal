@@ -16,8 +16,6 @@ function updateDocument() {
 
     for(i=0; i<=8; i++) {
         // If time card is in the past
-        console.log(document.getElementById("timeStamp" +i).textContent)
-        console.log(now.format('H'))
         if( document.getElementById("timeStamp" + i).textContent <= now.format('H') ) {
             document.getElementById("inputField" + i).style.backgroundColor = "gray";
             // If this timecard already happened and had an event scheduled for it
@@ -45,7 +43,7 @@ setInterval(updateDocument, 1000);
 
 // Executed every time the user clicks on the save buttons. Each time slot is saved individually by each save button.
 function updateData(index) {
-    var dailyEvents = JSON.parse(localStorage.dailyEventsStorage);
+    var dailyEventsStorage = JSON.parse(localStorage.dailyEventsStorage);
 
     if( document.getElementById("textInput" + index).value ) {
         dailyEventsStorage[index] = document.getElementById("textInput" + index).value;
